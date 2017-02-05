@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="playerSize" sid="483447776721320" static="0" type="number">48</variable>
+        <variable constant="0" name="highScore" sid="403261117814902" static="0" type="number">0</variable>
+        <variable constant="0" name="score" sid="9892237185794072" static="0" type="number">0</variable>
+        <variable constant="0" name="branchRate" sid="5577335707271608" static="0" type="number">3</variable>
+        <variable constant="0" name="tortoiseRate" sid="810052716028538" static="0" type="number">5</variable>
+        <variable constant="0" name="thornRate" sid="908679686302424" static="0" type="number">6</variable>
+        <event-group description="" sid="7089623258410397" title="Startup">
+            <sub-events>
+                <event-block sid="71995677918382">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="3366327153299596">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2458629118778599" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-20" name="Set layout scale" sid="3092630325713758" type="System">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="475297403885143" type="PlayerAnimations">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="387746379407047" type="PlayerAnimations">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5916243491109971">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="912485869168220">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="576894747178486" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="311383805537282" type="SpriteFont">
+                            <param id="0" name="Text">score &amp; &quot; / &quot; &amp; highScore</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="440122925531106">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6429541068038232" title="Sloth">
+            <sub-events>
+                <event-block sid="71995677918382">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block any="1" sid="503351068699351">
+                    <conditions>
+                        <condition id="0" name="On any touch start" sid="9876889061894042" type="Touch" />
+                        <condition id="1" name="On any key pressed" sid="7055522989398967" type="Keyboard" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="10" name="Set angle of gravity" sid="8972858611635832" type="Player">
+                            <param id="0" name="Angle">Player.Platform.GravityAngle + 180</param>
+                        </action>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="9340584244678119" type="Player">
+                            <param id="0" name="Vector Y">0</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="3869785051712658" type="PlayerAnimations">
+                            <param id="0" name="Width">playerSize</param>
+                            <param id="1" name="Height">playerSize / 2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5916243491109971">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6786494840357616" type="Player">
+                            <param id="0" name="Object">safeTreeTrunk</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="2037013900878163" type="PlayerAnimations">
+                            <param id="0" name="Width">playerSize</param>
+                            <param id="1" name="Height">playerSize * 1.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="321092788140522">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="488216179914115" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="188332790218140" type="PlayerAnimations">
+                            <param id="0" name="Width">lerp(PlayerAnimations.Width, playerSize, 0.2)</param>
+                            <param id="1" name="Height">lerp(PlayerAnimations.Height, playerSize, 0.2)</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="855306197799344" type="Player">
+                            <param id="0" name="X">LayoutWidth / 2</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="105316392678455">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="1614883104381497">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="961955796888577" type="System">
+                            <param id="0" name="First value">Player.Platform.GravityAngle</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="408212751007939" type="PlayerAnimations">
+                            <param id="0" name="Angle">lerp(PlayerAnimations.Angle, 90, 0.15)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="870254085281135">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="750428346410466" type="System">
+                            <param id="0" name="First value">Player.Platform.GravityAngle</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">270</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="462739635443867" type="PlayerAnimations">
+                            <param id="0" name="Angle">lerp(PlayerAnimations.Angle, 270, 0.15)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2164704389338447">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="238245045912071" title="Branches">
+            <sub-events>
+                <event-block sid="199890412005507">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="420182232639784">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="348737485080780" type="System">
+                            <param id="0" name="Interval (seconds)">random(1,branchRate)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="645114177615360">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="138607471389138" type="System">
+                                    <param id="0" name="First value">choose(1,2)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="858930933938511" type="System">
+                                    <param id="0" name="Object to create">safeBranch</param>
+                                    <param id="1" name="Layer">&quot;Midground&quot;</param>
+                                    <param id="2" name="X">ViewportLeft(0) - 200</param>
+                                    <param id="3" name="Y">random(90,380)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="143803665079970" type="safeBranch">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="440375464047844">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="474817611377383" type="System">
+                                    <param id="0" name="First value">choose(1,2)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="917061622788257" type="System">
+                                    <param id="0" name="Object to create">safeBranch</param>
+                                    <param id="1" name="Layer">&quot;Midground&quot;</param>
+                                    <param id="2" name="X">ViewportRight(0) + 200</param>
+                                    <param id="3" name="Y">random(90,380)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="864804193127231" type="safeBranch">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="671149618891539">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5334718758552265" title="Tortoises">
+            <sub-events>
+                <event-block sid="71995677918382">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="3366327153299596">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="7538006673184733" type="System">
+                            <param id="0" name="Interval (seconds)">random(2,tortoiseRate)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1763044818490915">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="4797694474356256" type="System">
+                                    <param id="0" name="First value">choose(1,2,3,4)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="1571578147742137" type="System">
+                                    <param id="0" name="Object to create">enemyTortoise</param>
+                                    <param id="1" name="Layer">&quot;Midground&quot;</param>
+                                    <param id="2" name="X">ViewportLeft(0) - 20</param>
+                                    <param id="3" name="Y">random(80,100)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="494432820805399" type="enemyTortoise">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="855536475023467" type="enemyTortoise">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="269687984867273">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="495308005016089" type="System">
+                                    <param id="0" name="First value">choose(1,2,3,4)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="737784878400196" type="System">
+                                    <param id="0" name="Object to create">enemyTortoise</param>
+                                    <param id="1" name="Layer">&quot;Midground&quot;</param>
+                                    <param id="2" name="X">ViewportLeft(0) - 20</param>
+                                    <param id="3" name="Y">random(370,390)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="431634711207152" type="enemyTortoise">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="527448867886122" type="enemyTortoise">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action disabled="1" id="8" name="Set flipped" sid="950770346191892" type="enemyTortoise">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6620333027826494">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="1437382683695833" type="System">
+                                    <param id="0" name="First value">choose(1,2,3,4)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="9533438377563527" type="System">
+                                    <param id="0" name="Object to create">enemyTortoise</param>
+                                    <param id="1" name="Layer">&quot;Midground&quot;</param>
+                                    <param id="2" name="X">ViewportRight(0) + 20</param>
+                                    <param id="3" name="Y">random(80,100)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="2348752519046616" type="enemyTortoise">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="220568017831038" type="enemyTortoise">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="518190113277090">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="120485904412681" type="System">
+                                    <param id="0" name="First value">choose(1,2,3,4)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="267407559288393" type="System">
+                                    <param id="0" name="Object to create">enemyTortoise</param>
+                                    <param id="1" name="Layer">&quot;Midground&quot;</param>
+                                    <param id="2" name="X">ViewportRight(0) + 20</param>
+                                    <param id="3" name="Y">random(370,390)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="628432175205819" type="enemyTortoise">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action disabled="1" id="8" name="Set flipped" sid="238406740993374" type="enemyTortoise">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="654980259341292" type="enemyTortoise">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="396749044620143">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="676616828123307" title="Thorns">
+            <sub-events>
+                <event-block sid="310597573767067">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="953165801903631">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="696606875263558" type="System">
+                            <param id="0" name="Interval (seconds)">random(3,thornRate)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="736348619733391">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="176315403387063" type="System">
+                                    <param id="0" name="First value">choose(1,2,3,4)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="649675198776994" type="System">
+                                    <param id="0" name="Object to create">enemyThornHead</param>
+                                    <param id="1" name="Layer">&quot;Foreground&quot;</param>
+                                    <param id="2" name="X">ViewportLeft(0) - 20</param>
+                                    <param id="3" name="Y">random(120,220)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="220278547992739" type="enemyThornHead">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="722124887384333" type="enemyThornHead">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="479362821809331" type="enemyThornHead">
+                                    <param id="0" name="Speed">random(25,75)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="841028789120281">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="911828085009308" type="System">
+                                    <param id="0" name="First value">choose(1,2,3,4)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="250721694673035" type="System">
+                                    <param id="0" name="Object to create">enemyThornHead</param>
+                                    <param id="1" name="Layer">&quot;Foreground&quot;</param>
+                                    <param id="2" name="X">ViewportLeft(0) - 20</param>
+                                    <param id="3" name="Y">random(260,360)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="115262269864744" type="enemyThornHead">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="669223985206147" type="enemyThornHead">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="842020545874911" type="enemyThornHead">
+                                    <param id="0" name="Speed">random(25,75)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="627071092139984">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="917155499352195" type="System">
+                                    <param id="0" name="First value">choose(1,2,3,4)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="607498789953817" type="System">
+                                    <param id="0" name="Object to create">enemyThornHead</param>
+                                    <param id="1" name="Layer">&quot;Foreground&quot;</param>
+                                    <param id="2" name="X">ViewportRight(0) + 20</param>
+                                    <param id="3" name="Y">random(120,220)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="521881124914007" type="enemyThornHead">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="108582350105163" type="enemyThornHead">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="416797830842352" type="enemyThornHead">
+                                    <param id="0" name="Speed">random(25,75)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="594921761132191">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="373936600216930" type="System">
+                                    <param id="0" name="First value">choose(1,2,3,4)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="486990827699499" type="System">
+                                    <param id="0" name="Object to create">enemyThornHead</param>
+                                    <param id="1" name="Layer">&quot;Foreground&quot;</param>
+                                    <param id="2" name="X">ViewportRight(0) + 20</param>
+                                    <param id="3" name="Y">random(260,360)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="582572711201724" type="enemyThornHead">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="8" name="Set flipped" sid="971549815446140" type="enemyThornHead">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="509588116923331" type="enemyThornHead">
+                                    <param id="0" name="Speed">random(25,75)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="887026210653203">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="409710148116797">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="369704380603343" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="950741819822545" type="enemyThornHead">
+                            <param id="0" name="Object">enemyThornTail</param>
+                            <param id="1" name="Layer">&quot;Midground&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="351903864360024">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1257286898823322" title="Collisions">
+            <sub-events>
+                <event-block sid="71995677918382">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block any="1" sid="3366327153299596">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1642406640395799" type="Player">
+                            <param id="0" name="Object">enemyTortoise</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="408640523912689" type="Player">
+                            <param id="0" name="Object">enemyThornHead</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="6012019128834254" type="Player">
+                            <param id="0" name="Object">Particles</param>
+                            <param id="1" name="Layer">&quot;Midground&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="1882524092797399" type="Player" />
+                        <action id="-9" name="Destroy" sid="722646414615707" type="PlayerAnimations" />
+                        <action id="-16" name="Wait" sid="4191210901857298" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="7307135791544053" type="System" />
+                        <action id="-21" name="Reset global variables" sid="7010994878666375" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="5916243491109971">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6488709919627263" type="enemyTortoise">
+                            <param id="0" name="Object">safeBranch</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="652640906359096" type="enemyTortoise">
+                            <param id="0" name="Speed">(90-enemyTortoise.Angle)*2</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="530877200425693" type="enemyTortoise">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="742317648836062" type="enemyTortoise">
+                            <param id="0" name="Vector Y">-450</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="326583058000516" type="enemyTortoise">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="616378270772891" type="enemyTortoise">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="982323256039722" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7262717952344521" type="enemyTortoise" />
+                    </actions>
+                </event-block>
+                <event-block sid="629900868642342">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="8683424671140534">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="3226141322298712">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5930402633773183" title="Bananas">
+            <sub-events>
+                <event-block sid="71995677918382">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="54910490133014">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9269979527765625" type="Player">
+                            <param id="0" name="Object">SwitchBottom</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="768401803696282" type="SwitchBottom">
+                            <param id="0" name="Animation">&quot;Off&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="939576613174655" type="SwitchBottom">
+                            <param id="0" name="Animation">&quot;On&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="6332147892220835" type="SwitchTop">
+                            <param id="0" name="Animation">&quot;Off&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="681875384545822" type="Function">
+                            <param id="0" name="Name">&quot;hitSwitch&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6276962402007731">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8292220865480922" type="Player">
+                            <param id="0" name="Object">SwitchTop</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="198751083292117" type="SwitchTop">
+                            <param id="0" name="Animation">&quot;Off&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4298095244615367" type="SwitchBottom">
+                            <param id="0" name="Animation">&quot;Off&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5773804022087702" type="SwitchTop">
+                            <param id="0" name="Animation">&quot;On&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="925955397266914" type="Function">
+                            <param id="0" name="Name">&quot;hitSwitch&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3535668198004922">
+                    <conditions>
+                        <condition id="0" name="On function" sid="210471586545496" type="Function">
+                            <param id="0" name="Name">&quot;hitSwitch&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="6277578536570887" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-34" name="Set layer background color" sid="2401426860285538" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Color">rgb(255, 255, 255)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="9756975850128001" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-34" name="Set layer background color" sid="4096547467805551" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Color">rgb(127, 127, 127)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="624485366227369">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="184858890577524" type="background">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Number">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="968865678049113" type="background">
+                                    <param id="0" name="Frame number">background.AnimationFrame+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="268364302684217">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="185892149761216" type="background">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Number">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="161185451064140" type="background">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9716155085429313">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="5916243491109971">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1631670043702161" title="Cleanup">
+            <sub-events>
+                <event-block sid="71995677918382">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block any="1" sid="3366327153299596">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="413867895494918" type="enemyTortoise">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">-600</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="630506586383881" type="enemyTortoise">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">900</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="120304633560371" type="enemyTortoise" />
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="143338076365294">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="365250096310360" type="enemyThornHead">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">-600</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="971394767712982" type="enemyThornHead">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">900</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="679203728494784" type="enemyThornHead" />
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="760469578049320">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="508807528907205" type="safeBranch">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">-600</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="189218794749672" type="safeBranch">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">900</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="819078512377916" type="safeBranch" />
+                    </actions>
+                </event-block>
+                <event-block sid="228377237398759">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="5916243491109971">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="315971641229897" title="LocalStorage">
+            <sub-events>
+                <event-block sid="530480759699907">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="561379821891723">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="152151897702905">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="999790280837725" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Check item exists" sid="723814248204478" type="LocalStorage">
+                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="277385379298429">
+                    <conditions>
+                        <condition id="9" name="On item exists" sid="217368563456649" type="LocalStorage">
+                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Get item" sid="294642781745607" type="LocalStorage">
+                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="149268648298622">
+                    <conditions>
+                        <condition id="1" name="On item get" sid="230929772585221" type="LocalStorage">
+                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="522738199650785" type="System">
+                            <param id="0" name="Variable">highScore</param>
+                            <param id="1" name="Value">LocalStorage.ItemValue</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="501603820785919">
+                    <conditions>
+                        <condition id="10" name="On item missing" sid="993162353360714" type="LocalStorage">
+                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="481568391131730" type="System">
+                            <param id="0" name="Variable">highScore</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="481874348572598">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="649846101633936" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">highScore</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="529162908322498" type="System">
+                            <param id="0" name="Variable">highScore</param>
+                            <param id="1" name="Value">score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="235033902733064" type="LocalStorage">
+                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="1" name="Value">highScore</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="221727979058811">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="486865022877049" title="Group8">
+            <sub-events>
+                <event-block sid="828914641803060">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="792508709573670">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="372448754596718">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="825700406287048" title="Group9">
+            <sub-events>
+                <event-block sid="815053182300468">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="558724977195991">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="873807583278757">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="544596170075188" title="Group10">
+            <sub-events>
+                <event-block sid="173172562118186">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="835236466255658">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="514958520685976">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
