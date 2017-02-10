@@ -946,8 +946,17 @@
                     </actions>
                     <sub-events>
                         <event-block sid="447638888460569">
-                            <conditions />
-                            <actions />
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="487393074660926" type="trees">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">118</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="852514394182656" type="trees">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -965,9 +974,18 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="486036987908887">
-                            <conditions />
-                            <actions />
+                        <event-block sid="977371627614910">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="597326077986116" type="trees">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">365</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="199503903476301" type="trees">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>

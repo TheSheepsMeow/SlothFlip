@@ -162,8 +162,13 @@
         </object-type>
         <object-type name="SwitchTop" sid="7567472005753765">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="195146046665842">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="4" loop="0" name="Off" pingpong="0" repeatcount="1" repeatto="0" sid="1429871781379949" speed="20">
+                <animation framecount="4" loop="0" name="Off" pingpong="0" repeatcount="0" repeatto="0" sid="1429871781379949" speed="20">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0" y="0.5" />
@@ -210,7 +215,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="4" loop="0" name="Off" pingpong="1" repeatcount="0" repeatto="0" sid="2602611136582416" speed="20">
+                <animation framecount="4" loop="0" name="Off" pingpong="0" repeatcount="0" repeatto="0" sid="2602611136582416" speed="20">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0" y="0.5" />
