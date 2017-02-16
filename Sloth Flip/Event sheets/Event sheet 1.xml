@@ -123,6 +123,17 @@
                             <param id="0" name="Width">playerWidth</param>
                             <param id="1" name="Height">playerHeight* 1.5</param>
                         </action>
+                        <action disabled="1" id="4" name="Set animation" sid="417685259997059" type="PlayerAnimations">
+                            <param id="0" name="Animation">&quot;Landed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action disabled="1" id="-16" name="Wait" sid="502035307302144" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action disabled="1" id="4" name="Set animation" sid="443225569945116" type="PlayerAnimations">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="321092788140522">
@@ -634,6 +645,7 @@
                     <conditions />
                     <actions />
                 </event-block>
+                <comment>banana is on the bottom, and visible</comment>
                 <event-block sid="54910490133014">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="9269979527765625" type="Player">
@@ -661,6 +673,10 @@
                             <param id="1" name="Layer">&quot;Midground&quot;</param>
                             <param id="2" name="Image point">0</param>
                         </action>
+                        <action id="4" name="Set animation" sid="561222526409322" type="PlayerAnimations">
+                            <param id="0" name="Animation">&quot;Banana&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="0" name="Spawn another object" sid="148026550429713" type="PlayerAnimations">
                             <param id="0" name="Object">expression</param>
                             <param id="1" name="Layer">&quot;Midground&quot;</param>
@@ -673,7 +689,50 @@
                             <param id="0" name="Gravity">-1600</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="138427293389151">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="199566822550891" type="bananaShadow">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">LayoutHeight/2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="295672527623409" type="bananaShadow">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="364017416916745">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="285582794299356" type="bananaShadow">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">LayoutHeight/2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="266198226685405" type="bananaShadow">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="123271907034466">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="858048256286272" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="448179787297505" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="736721936277069" type="PlayerAnimations">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
+                <comment>banana is on the top and visible</comment>
                 <event-block sid="6276962402007731">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="8292220865480922" type="Player">
@@ -701,6 +760,10 @@
                             <param id="1" name="Layer">&quot;Midground&quot;</param>
                             <param id="2" name="Image point">0</param>
                         </action>
+                        <action id="4" name="Set animation" sid="376222082088316" type="PlayerAnimations">
+                            <param id="0" name="Animation">&quot;Banana&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="14" name="Set gravity" sid="356401946154956" type="ParticlesSloth2">
                             <param id="0" name="Gravity">-400</param>
                         </action>
@@ -716,6 +779,48 @@
                             <param id="0" name="Gravity">1600</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="523085385015097">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="661090732025171" type="bananaShadow">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">LayoutHeight/2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="573994425408621" type="bananaShadow">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="437725531672239">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="292130003513604" type="bananaShadow">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">LayoutHeight/2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="720937444773024" type="bananaShadow">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="369451034133232">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="929436269473661" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="592640368802170" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="652174504298313" type="PlayerAnimations">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="3535668198004922">
                     <conditions>
