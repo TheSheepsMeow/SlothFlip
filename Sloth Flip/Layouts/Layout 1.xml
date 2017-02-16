@@ -29,26 +29,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="groundBG" uid="32">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-73</x>
-                        <y>394</y>
-                        <z>0</z>
-                        <width>512</width>
-                        <height>138</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="background" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -109,6 +89,26 @@
                         <hotspotY>0</hotspotY>
                         <angle>3.141592741</angle>
                         <opacity>0.5</opacity>
+                    </world>
+                </instance>
+                <instance type="groundBG" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-73</x>
+                        <y>394</y>
+                        <z>0</z>
+                        <width>512</width>
+                        <height>138</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="groundBG2" uid="33">
@@ -182,7 +182,7 @@
                         <height>230.221481323</height>
                         <depth>0</depth>
                         <hotspotX>0.500787377</hotspotX>
-                        <hotspotY>0.501154721</hotspotY>
+                        <hotspotY>-0.230946884</hotspotY>
                         <angle>0</angle>
                         <opacity>0.200000003</opacity>
                     </world>
@@ -219,7 +219,7 @@
                         <height>234.921401978</height>
                         <depth>0</depth>
                         <hotspotX>0.500787377</hotspotX>
-                        <hotspotY>0.501154721</hotspotY>
+                        <hotspotY>-0.230946884</hotspotY>
                         <angle>3.141592741</angle>
                         <opacity>0.200000003</opacity>
                     </world>
@@ -323,60 +323,6 @@
                         <z>0</z>
                         <width>77.459663391</width>
                         <height>77.459663391</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="enemyTortoise" uid="8">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>50</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Disabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Rotate">
-                            <properties>
-                                <speed>0</speed>
-                                <acceleration>0</acceleration>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>318</x>
-                        <y>374</y>
-                        <z>0</z>
-                        <width>128</width>
-                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -643,10 +589,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>155</x>
-                        <y>73</y>
+                        <y>85.226875305</y>
                         <z>0</z>
                         <width>78</width>
-                        <height>27</height>
+                        <height>11.647000313</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.470297039</hotspotY>
@@ -654,7 +600,7 @@
                         <opacity>0.25</opacity>
                     </world>
                 </instance>
-                <instance type="SwitchTop" uid="9">
+                <instance type="bananaTop" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -680,7 +626,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>160</x>
-                        <y>96.060791016</y>
+                        <y>109.790054321</y>
                         <z>0</z>
                         <width>144</width>
                         <height>96</height>
@@ -702,10 +648,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>160</x>
-                        <y>405</y>
+                        <y>394.062591553</y>
                         <z>0</z>
                         <width>78</width>
-                        <height>27</height>
+                        <height>11.647094727</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.470297039</hotspotY>
@@ -713,7 +659,7 @@
                         <opacity>0.25</opacity>
                     </world>
                 </instance>
-                <instance type="SwitchBottom" uid="10">
+                <instance type="bananaBottom" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -739,7 +685,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>160</x>
-                        <y>383.939208984</y>
+                        <y>369.635375977</y>
                         <z>0</z>
                         <width>144</width>
                         <height>96</height>
@@ -840,82 +786,6 @@
                         <depth>0</depth>
                         <hotspotX>0.515151501</hotspotX>
                         <hotspotY>0.515151501</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Player" uid="4">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>2000</gravity>
-                                <max-fall-speed>3000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>240</y>
-                        <z>0</z>
-                        <width>25.600000381</width>
-                        <height>25.600000381</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="PlayerAnimations" uid="13">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                        <behavior-instance type="ShadowCaster">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                                <height>50</height>
-                                <tag></tag>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Rotate">
-                            <properties>
-                                <speed>0</speed>
-                                <acceleration>0</acceleration>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>366</x>
-                        <y>156</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>144</height>
-                        <depth>0</depth>
-                        <hotspotX>0.375</hotspotX>
-                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1055,6 +925,136 @@
                         <y>-6</y>
                         <z>0</z>
                         <width>430</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PlayerAnimations" uid="13">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="ShadowCaster">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                                <height>50</height>
+                                <tag></tag>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>366</x>
+                        <y>156</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>144</height>
+                        <depth>0</depth>
+                        <hotspotX>0.375</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Player" uid="4">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>330</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>2000</gravity>
+                                <max-fall-speed>3000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>240</y>
+                        <z>0</z>
+                        <width>25.600000381</width>
+                        <height>25.600000381</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="enemyTortoise" uid="8">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>330</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>318</x>
+                        <y>374</y>
+                        <z>0</z>
+                        <width>128</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>

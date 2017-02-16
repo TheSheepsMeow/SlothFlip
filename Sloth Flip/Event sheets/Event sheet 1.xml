@@ -248,7 +248,7 @@
                             <actions>
                                 <action id="-3" name="Create object" sid="1571578147742137" type="System">
                                     <param id="0" name="Object to create">enemyTortoise</param>
-                                    <param id="1" name="Layer">&quot;Midground&quot;</param>
+                                    <param id="1" name="Layer">&quot;Foreground&quot;</param>
                                     <param id="2" name="X">ViewportLeft(0) - 90</param>
                                     <param id="3" name="Y">random(80,100)</param>
                                 </action>
@@ -271,7 +271,7 @@
                             <actions>
                                 <action id="-3" name="Create object" sid="737784878400196" type="System">
                                     <param id="0" name="Object to create">enemyTortoise</param>
-                                    <param id="1" name="Layer">&quot;Midground&quot;</param>
+                                    <param id="1" name="Layer">&quot;Foreground&quot;</param>
                                     <param id="2" name="X">ViewportLeft(0) - 90</param>
                                     <param id="3" name="Y">random(370,390)</param>
                                 </action>
@@ -297,7 +297,7 @@
                             <actions>
                                 <action id="-3" name="Create object" sid="9533438377563527" type="System">
                                     <param id="0" name="Object to create">enemyTortoise</param>
-                                    <param id="1" name="Layer">&quot;Midground&quot;</param>
+                                    <param id="1" name="Layer">&quot;Foreground&quot;</param>
                                     <param id="2" name="X">ViewportRight(0) + 90</param>
                                     <param id="3" name="Y">random(80,100)</param>
                                 </action>
@@ -320,7 +320,7 @@
                             <actions>
                                 <action id="-3" name="Create object" sid="267407559288393" type="System">
                                     <param id="0" name="Object to create">enemyTortoise</param>
-                                    <param id="1" name="Layer">&quot;Midground&quot;</param>
+                                    <param id="1" name="Layer">&quot;Foreground&quot;</param>
                                     <param id="2" name="X">ViewportRight(0) + 90</param>
                                     <param id="3" name="Y">random(370,390)</param>
                                 </action>
@@ -503,6 +503,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-12" name="Set group active" sid="142582704015669" type="System">
+                            <param id="0" name="Group name">&quot;Trees&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                         <action behavior="ScrollTo" id="0" name="Shake" sid="720326384424739" type="Camera">
                             <param id="0" name="Magnitude">20</param>
                             <param id="1" name="Duration">0.4</param>
@@ -649,18 +653,18 @@
                 <event-block sid="54910490133014">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="9269979527765625" type="Player">
-                            <param id="0" name="Object">SwitchBottom</param>
+                            <param id="0" name="Object">bananaBottom</param>
                         </condition>
-                        <condition id="2" name="Is playing" sid="768401803696282" type="SwitchBottom">
+                        <condition id="2" name="Is playing" sid="768401803696282" type="bananaBottom">
                             <param id="0" name="Animation">&quot;Off&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="939576613174655" type="SwitchBottom">
+                        <action id="4" name="Set animation" sid="939576613174655" type="bananaBottom">
                             <param id="0" name="Animation">&quot;On&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="6332147892220835" type="SwitchTop">
+                        <action id="4" name="Set animation" sid="6332147892220835" type="bananaTop">
                             <param id="0" name="Animation">&quot;Off&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -668,7 +672,7 @@
                             <param id="0" name="Name">&quot;hitSwitch&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
-                        <action id="0" name="Spawn another object" sid="519434581938901" type="SwitchBottom">
+                        <action id="0" name="Spawn another object" sid="519434581938901" type="bananaBottom">
                             <param id="0" name="Object">ParticlesSloth2</param>
                             <param id="1" name="Layer">&quot;Midground&quot;</param>
                             <param id="2" name="Image point">0</param>
@@ -736,18 +740,18 @@
                 <event-block sid="6276962402007731">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="8292220865480922" type="Player">
-                            <param id="0" name="Object">SwitchTop</param>
+                            <param id="0" name="Object">bananaTop</param>
                         </condition>
-                        <condition id="2" name="Is playing" sid="198751083292117" type="SwitchTop">
+                        <condition id="2" name="Is playing" sid="198751083292117" type="bananaTop">
                             <param id="0" name="Animation">&quot;Off&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4298095244615367" type="SwitchBottom">
+                        <action id="4" name="Set animation" sid="4298095244615367" type="bananaBottom">
                             <param id="0" name="Animation">&quot;Off&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="5773804022087702" type="SwitchTop">
+                        <action id="4" name="Set animation" sid="5773804022087702" type="bananaTop">
                             <param id="0" name="Animation">&quot;On&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -755,7 +759,7 @@
                             <param id="0" name="Name">&quot;hitSwitch&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
-                        <action id="0" name="Spawn another object" sid="590657498885354" type="SwitchTop">
+                        <action id="0" name="Spawn another object" sid="590657498885354" type="bananaTop">
                             <param id="0" name="Object">ParticlesSloth2</param>
                             <param id="1" name="Layer">&quot;Midground&quot;</param>
                             <param id="2" name="Image point">0</param>
@@ -1032,9 +1036,31 @@
             <sub-events>
                 <event-block sid="828914641803060">
                     <conditions>
-                        <condition id="-1" name="Every tick" sid="536741897386028" type="System" />
+                        <condition id="-14" name="Compare variable" sid="199528753342580" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-2" name="Set Y" sid="592368064747991" type="trees">
+                            <param id="0" name="Y">240 - (240-Player.Y) / (25-score)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="748428438337219">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="651989299486059" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="932025892591696" type="trees">
+                            <param id="0" name="Y">240 - (240-Player.Y) / (5)</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="792508709573670">
                     <conditions>
