@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Title</name>
+    <events>
+        <variable constant="0" name="isMuted" sid="427063381037159" static="0" type="number">0</variable>
+        <include>LocalStorage</include>
+        <event-group description="" sid="937298375407026" title="Title">
+            <sub-events>
+                <event-block sid="897119099613449">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="289518003073890" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="717774535971962" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;Branch_Break_2&quot;,&quot;Branch_Break_3&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="208929034513899">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="399196085664293" type="Touch">
+                            <param id="0" name="Object">muteButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="503801706055391" type="System">
+                            <param id="0" name="Variable">isMuted</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="331967223298626" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="161491697315730" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;Medium_Sloth_Sound_2&quot;,&quot;Medium_Sloth_Sound_3&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="667808889466347">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="851827381046305" type="System">
+                            <param id="0" name="Variable">isMuted</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="264606760764252" type="System">
+                            <param id="0" name="Variable">isMuted</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="955078226613902">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="869085216946923" type="System">
+                            <param id="0" name="Variable">isMuted</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="594061514702576" type="muteButton">
+                            <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set silent" sid="408098339485864" type="Audio">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="314221110537484">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="651523387258224" type="System">
+                            <param id="0" name="Variable">isMuted</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="854933289457581" type="muteButton">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set silent" sid="366582821774803" type="Audio">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="506611343964873">
+                    <conditions>
+                        <condition id="0" name="On any touch start" sid="349349448242259" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="743579921522361" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;Branch_Break&quot;,&quot;Branch_Break_2&quot;,&quot;Branch_Break_3&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="587227202788072">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <comment></comment>
+                <event-block sid="549263402440885">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="535078513602952">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="431680683188935" type="Touch">
+                            <param id="0" name="Object">menuButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="616320075035946" type="Audio">
+                            <param id="0" name="Audio file">Branch_Break</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="999483359303922" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;Medium_Sloth_Sound_2&quot;,&quot;Medium_Sloth_Sound_3&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="453964188053377" type="menuButton">
+                            <param id="0" name="Object">expression</param>
+                            <param id="1" name="Layer">&quot;FG&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="132200998454413" type="expression">
+                            <param id="0" name="Angle">0</param>
+                            <param id="1" name="Distance">random(-80,80)</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="396958768896480" type="expression">
+                            <param id="0" name="Degrees">random(-15,15)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="183745012378527" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="438703692240781" type="menuButton">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="999685809277407" type="menuButton">
+                            <param id="0" name="Object">expression</param>
+                            <param id="1" name="Layer">&quot;FG&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="934100349293410" type="expression">
+                            <param id="0" name="Angle">0</param>
+                            <param id="1" name="Distance">random(-80,80)</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="925489902962251" type="expression">
+                            <param id="0" name="Degrees">random(-15,15)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="556650789264271" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="790300271699224" type="menuButton">
+                            <param id="0" name="Object">expression</param>
+                            <param id="1" name="Layer">&quot;FG&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="162512409845641" type="expression">
+                            <param id="0" name="Angle">0</param>
+                            <param id="1" name="Distance">random(-80,80)</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="342425277154117" type="expression">
+                            <param id="0" name="Degrees">random(-15,15)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="627275933770363" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="490005135356459" type="System">
+                            <param id="0" name="Layout">Layout 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="258071727632535">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="668498031859665" type="Touch">
+                            <param id="0" name="Object">menuButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="571408447325757" type="menuButton">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="578167343239199">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="722451109892180" type="Touch">
+                            <param id="0" name="Object">menuButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="155642128217589" type="menuButton">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="244983958302096">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="924696685249943">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="519591504814642" type="Touch">
+                            <param id="0" name="Object">ad</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="965458569561496" type="Audio">
+                            <param id="0" name="Audio file">Branch_Break_2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="8" name="Open URL in new window" sid="374214030772109" type="Browser">
+                            <param id="0" name="URL">&quot;http://www.thesheepsmeow.com/&quot;</param>
+                            <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="568479563658366">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <comment></comment>
+                <event-block sid="422919690874790">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set text" sid="533977483370407" type="textDebug">
+                            <param id="0" name="Text">&quot;Version: &quot; &amp; projectversion</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="966541086404501">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set text" sid="748065105129436" type="SpriteFont">
+                            <param id="0" name="Text">&quot;bananas: &quot; &amp; highScore</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment></comment>
+                <event-block sid="578935375483538">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="260327940046816">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="330719342047563" type="Touch">
+                            <param id="0" name="Object">menuButtonReset</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Clear storage" sid="942841969056003" type="LocalStorage" />
+                        <action id="-9" name="Set value" sid="979175276900326" type="System">
+                            <param id="0" name="Variable">highScore</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="779938749888127" type="Audio">
+                            <param id="0" name="Audio file">Branch_Break_3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="353210883162883">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="902704621623135" type="Touch">
+                            <param id="0" name="Object">menuButtonReset</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="906682169878275" type="menuButtonReset">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="371239372647033">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="983515910168569" type="Touch">
+                            <param id="0" name="Object">menuButtonReset</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="683326081703555" type="menuButtonReset">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="793060958258575">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="899181354149043">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="387846245726690">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="289881591940641">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="831075065002731" type="System">
+                            <param id="0" name="Interval (seconds)">random(1,3)</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="990205072871783" type="System">
+                            <param id="0" name="First value">bananaBullet.Count</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">highScore</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="918758763288699">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="535157927230514" type="System">
+                                    <param id="0" name="First value">bananaBullet.Count</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">20</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="137508413135669" type="System">
+                                    <param id="0" name="Object to create">bananaBullet</param>
+                                    <param id="1" name="Layer">&quot;MG&quot;</param>
+                                    <param id="2" name="X">-100</param>
+                                    <param id="3" name="Y">random(100, layoutheight-100)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="708116761837086" type="bananaBullet">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="442788968083009" type="bananaBullet">
+                                    <param id="0" name="Angle">random(0,360)</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="723116986878610" type="bananaBullet">
+                                    <param id="0" name="Speed">random(10,50)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="555346670203233">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="432580805094297" type="System">
+                            <param id="0" name="Interval (seconds)">random(1,3)</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="595796353972109" type="System">
+                            <param id="0" name="First value">bananaBullet.Count</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">highScore</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="109949260849264">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="231638499958725" type="System">
+                                    <param id="0" name="First value">bananaBullet.Count</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">20</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="391788977760501" type="System">
+                                    <param id="0" name="Object to create">bananaBullet</param>
+                                    <param id="1" name="Layer">&quot;MG&quot;</param>
+                                    <param id="2" name="X">LayoutWidth+100</param>
+                                    <param id="3" name="Y">random(100, layoutheight-100)</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="715472295243831" type="bananaBullet">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="359041450442252" type="bananaBullet">
+                                    <param id="0" name="Angle">random(0,360)</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="119909919867041" type="bananaBullet">
+                                    <param id="0" name="Speed">random(10,50)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="747677004894242">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="938478212791089">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block any="1" sid="993590680581673">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="525865821278630" type="bananaBullet">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">-600</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="291586505673434" type="bananaBullet">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">900</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="713685272023288" type="bananaBullet" />
+                    </actions>
+                </event-block>
+                <event-block sid="176390985814369">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="990446397735427">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

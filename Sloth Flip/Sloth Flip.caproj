@@ -2,19 +2,21 @@
 <c2project>
     <name>Sloth Flip</name>
     <description></description>
-    <version>1.0.0.0</version>
+    <version>0.1</version>
     <author>The Sheep&apos;s Meow</author>
-    <author-email></author-email>
+    <author-email>community@thesheepsmeow.com</author-email>
     <author-website>http://www.thesheepsmeow.com</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -43,7 +45,8 @@
     </window-size>
     <pixel-rounding>1</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <use-loader-layout>0</use-loader-layout>
+    <first-layout>Loader</first-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Enable WebGL">On</prop>
@@ -441,6 +444,9 @@
                 <behavior-type name="Solid" sid="106720897087633">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="Sine" sid="808248795040240">
+                    <behavior id="Sin" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="472822298190352" speed="5">
@@ -502,6 +508,9 @@
                 </behavior-type>
                 <behavior-type name="Bullet" sid="450000374615826">
                     <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="130149546269086">
+                    <behavior id="Sin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -575,9 +584,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614927859737482" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614927859737482" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -644,13 +651,144 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="tiledBG" sid="636451713471128">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="textDebug" sid="808399280580046">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="titleBG" sid="540405462876979">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="textTitle" sid="791547049020169">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="menuButton" sid="258242248525267">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="686142187750324" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="864520262067126" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ad" sid="810328533861729">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="Browser" sid="169717907775018">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="loaderProgress" sid="184735398750270">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="muteButton" sid="204478435932723">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383891740006284" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="309582235227435" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menuButtonReset" sid="135925267515274">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528211986990321" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="268293988424717" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="textTitle2" sid="337900422981103">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="thesheepsmeow" sid="302919697584993">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286642335163161" speed="5">
+                    <frame duration="1" hotspotX="0.502857" hotspotY="0.502857" original-source="C:\Users\brian\Downloads\thesheepsmeow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bananaBullet" sid="958730227950940">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="338421803947465">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="241863683267192">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Off" pingpong="0" repeatcount="0" repeatto="0" sid="106820589201956" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.5" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.5" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.5" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.5" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="On" pingpong="0" repeatcount="1" repeatto="0" sid="916878001266031" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Title.xml</layout>
+        <layout>Loader.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Title.xml</event-sheet>
+        <event-sheet>LocalStorage.xml</event-sheet>
+        <event-sheet>Loader.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="0" />
@@ -676,9 +814,32 @@
         </global-instance>
         <global-instance type="LocalStorage" uid="18" />
         <global-instance type="Function" uid="20" />
+        <global-instance type="Browser" uid="54" />
     </global-instances>
-    <sounds-folder />
-    <music-folder />
+    <sounds-folder>
+        <file name="Low_Sloth_Sound.m4a" />
+        <file name="Low_Sloth_Sound.ogg" />
+        <file name="Medium_Sloth_Sound.m4a" />
+        <file name="Medium_Sloth_Sound.ogg" />
+        <file name="Medium_Sloth_Sound_2.m4a" />
+        <file name="Medium_Sloth_Sound_2.ogg" />
+        <file name="Medium_Sloth_Sound_3.m4a" />
+        <file name="Medium_Sloth_Sound_3.ogg" />
+        <file name="Branch_Break.m4a" />
+        <file name="Branch_Break.ogg" />
+        <file name="Branch_Break_2.m4a" />
+        <file name="Branch_Break_2.ogg" />
+        <file name="Branch_Break_3.m4a" />
+        <file name="Branch_Break_3.ogg" />
+        <file name="Banana_Squish.m4a" />
+        <file name="Banana_Squish.ogg" />
+        <file name="Banana_Squish_2.m4a" />
+        <file name="Banana_Squish_2.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="SlothFlip_OST_-_Jungle_Cruise_-_Tyier_Godette.m4a" />
+        <file name="SlothFlip_OST_-_Jungle_Cruise_-_Tyier_Godette.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
