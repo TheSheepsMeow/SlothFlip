@@ -78,10 +78,6 @@
                             <param id="0" name="Key">&quot;highScore_key&quot;</param>
                             <param id="1" name="Value">highScore</param>
                         </action>
-                        <action id="4" name="Set animation" sid="266793850957655" type="ScoreBG">
-                            <param id="0" name="Animation">&quot;Record&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="340542539835683">
