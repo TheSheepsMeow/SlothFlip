@@ -181,7 +181,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>157</x>
-                        <y>458</y>
+                        <y>450</y>
                         <z>0</z>
                         <width>395</width>
                         <height>148</height>
@@ -335,8 +335,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>60.70300293</x>
-                        <y>294.258239746</y>
+                        <x>-360</x>
+                        <y>294</y>
                         <z>0</z>
                         <width>197.967269897</width>
                         <height>75.705932617</height>
@@ -368,13 +368,13 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="textTitle" uid="37">
+                <instance type="textResetScores" uid="37">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>20</character-width>
+                        <character-height>34</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>reset bananas</text>
-                        <scale>0.5</scale>
+                        <text>RESET</text>
+                        <scale>0.4</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -386,8 +386,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>249.345108032</x>
-                        <y>80.956481934</y>
+                        <x>250.450149536</x>
+                        <y>81.956481934</y>
                         <z>0</z>
                         <width>67.380187988</width>
                         <height>22.728729248</height>
@@ -413,8 +413,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>34</x>
-                        <y>102.83706665</y>
+                        <x>368</x>
+                        <y>103</y>
                         <z>0</z>
                         <width>251.105987549</width>
                         <height>100.159873962</height>
@@ -424,7 +424,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="textTitle" uid="39">
+                <instance type="textResetScores" uid="39">
                     <properties>
                         <character-width>16</character-width>
                         <character-height>16</character-height>
@@ -442,8 +442,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>159.999984741</x>
-                        <y>148.83706665</y>
+                        <x>461</x>
+                        <y>149</y>
                         <z>0</z>
                         <width>200</width>
                         <height>82.970596313</height>
@@ -476,7 +476,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="textTitle" uid="41">
+                <instance type="textResetScores" uid="41">
                     <properties>
                         <character-width>16</character-width>
                         <character-height>16</character-height>
@@ -494,8 +494,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>159.999984741</x>
-                        <y>330.535339355</y>
+                        <x>465</x>
+                        <y>331</y>
                         <z>0</z>
                         <width>135.537185669</width>
                         <height>45.864151001</height>
@@ -506,13 +506,13 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="textTitle" uid="42">
+                <instance type="textResetScores" uid="42">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>20</character-width>
+                        <character-height>34</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>flip for bananas</text>
-                        <scale>0.66</scale>
+                        <text>FLIP FOR BANANAS!</text>
+                        <scale>0.65</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -524,10 +524,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>159.999984741</x>
-                        <y>222.472564697</y>
+                        <x>515</x>
+                        <y>248</y>
                         <z>0</z>
-                        <width>200</width>
+                        <width>259.487854004</width>
                         <height>36.241577148</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -551,7 +551,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
+                        <x>416</x>
                         <y>430</y>
                         <z>0</z>
                         <width>320</width>
@@ -562,13 +562,13 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="textTitle" uid="51">
+                <instance type="textResetScores" uid="51">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>20</character-width>
+                        <character-height>34</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>MORE GAMES</text>
-                        <scale>1.25</scale>
+                        <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -581,7 +581,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>179.789718628</x>
-                        <y>455.053833008</y>
+                        <y>579.62890625</y>
                         <z>0</z>
                         <width>228.385467529</width>
                         <height>41.247390747</height>
@@ -602,14 +602,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>25.654434204</x>
-                        <y>455.402038574</y>
+                        <x>559</x>
+                        <y>455</y>
                         <z>0</z>
                         <width>39.013114929</width>
                         <height>39.013114929</height>
                         <depth>0</depth>
-                        <hotspotX>0.502857029</hotspotX>
-                        <hotspotY>0.502857029</hotspotY>
+                        <hotspotX>0.502857149</hotspotX>
+                        <hotspotY>0.502857149</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -636,13 +636,13 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="textTitle2" uid="67">
+                <instance type="textCredits" uid="67">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>20</character-width>
+                        <character-height>34</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>Brian Chung, Tyier Godette, GJ Lee</text>
-                        <scale>0.5</scale>
+                        <scale>0.4</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -654,8 +654,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>159.999984741</x>
-                        <y>414.083312988</y>
+                        <x>162</x>
+                        <y>422</y>
                         <z>0</z>
                         <width>300</width>
                         <height>23.451385498</height>
@@ -668,11 +668,11 @@
                 </instance>
                 <instance type="textDebug" uid="69">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>20</character-width>
+                        <character-height>34</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>Text</text>
-                        <scale>0.5</scale>
+                        <scale>0.4</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Right</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -684,10 +684,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>208.975082397</x>
-                        <y>8.441101074</y>
+                        <x>175.842529297</x>
+                        <y>2.441101074</y>
                         <z>0</z>
-                        <width>109.030906677</width>
+                        <width>142.163482666</width>
                         <height>21.762180328</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -698,11 +698,11 @@
                 </instance>
                 <instance type="SpriteFont" uid="71">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>20</character-width>
+                        <character-height>34</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>bananas: 17</text>
-                        <scale>0.66</scale>
+                        <text>BANANAS: 17</text>
+                        <scale>0.5</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -714,11 +714,130 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>123.293930054</x>
-                        <y>80</y>
+                        <x>119.886940002</x>
+                        <y>78.356552124</y>
                         <z>0</z>
-                        <width>176.587890625</width>
-                        <height>30</height>
+                        <width>220.978988647</width>
+                        <height>33.286903381</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="title" uid="68">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Angle</movement>
+                                <wave>Sine</wave>
+                                <period>0.5</period>
+                                <period-random>1</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>3</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160.784606934</x>
+                        <y>174.796356201</y>
+                        <z>0</z>
+                        <width>282.430786133</width>
+                        <height>116.407279968</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="text3word" uid="76">
+                    <properties>
+                        <character-width>20</character-width>
+                        <character-height>34</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Flip for bananas!</text>
+                        <scale>0.66</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>164</x>
+                        <y>254</y>
+                        <z>0</z>
+                        <width>253</width>
+                        <height>43</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="menuMoreGames" uid="77">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>159.105834961</x>
+                        <y>453.103485107</y>
+                        <z>0</z>
+                        <width>320</width>
+                        <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="textMoreGames" uid="75">
+                    <properties>
+                        <character-width>20</character-width>
+                        <character-height>34</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>MORE GAMES</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>167.695404053</x>
+                        <y>454.368743896</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>43</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

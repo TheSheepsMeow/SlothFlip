@@ -556,8 +556,8 @@
                         <x>-99</x>
                         <y>70</y>
                         <z>0</z>
-                        <width>72</width>
-                        <height>95</height>
+                        <width>48</width>
+                        <height>48</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1123,11 +1123,11 @@
             <instances>
                 <instance type="SpriteFont" uid="11">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>20</character-width>
+                        <character-height>34</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>0</text>
-                        <scale>1</scale>
+                        <scale>0.75</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
