@@ -556,8 +556,8 @@
                         <x>-99</x>
                         <y>70</y>
                         <z>0</z>
-                        <width>72</width>
-                        <height>95</height>
+                        <width>48</width>
+                        <height>48</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -812,26 +812,6 @@
                         <depth>0</depth>
                         <hotspotX>0.515151501</hotspotX>
                         <hotspotY>0.515151501</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="TiledBackground2" uid="25">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-6</x>
-                        <y>-0.872848511</y>
-                        <z>0</z>
-                        <width>329</width>
-                        <height>27.840660095</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1102,6 +1082,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="scoreBG" uid="80">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>161</x>
+                        <y>16</y>
+                        <z>0</z>
+                        <width>320</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.503125012</hotspotX>
+                        <hotspotY>0.550000012</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -1123,11 +1125,11 @@
             <instances>
                 <instance type="SpriteFont" uid="11">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>20</character-width>
+                        <character-height>34</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>0</text>
-                        <scale>1</scale>
+                        <scale>0.75</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>

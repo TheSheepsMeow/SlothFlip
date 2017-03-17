@@ -233,7 +233,7 @@
         </object-type>
         <object-type name="SpriteFont" sid="4088007064766258">
             <plugin id="Spritefont2" />
-            <texture />
+            <texture original-source="C:\Users\Pitchfork\Desktop\Sprite Fonts\SpriteFont_UbuntuMono_Bold_(36)_[0,0,0,0]_20x34.png" />
         </object-type>
         <object-type name="ParticlesSloth" sid="7062020707781162">
             <plugin id="Particles" />
@@ -584,9 +584,19 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614927859737482" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614927859737482" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\smileing.png">
+                        <collision-poly>
+                            <point x="0.180556" y="0.180556" />
+                            <point x="0.5" y="0.791667" />
+                            <point x="0.833333" y="0.166667" />
+                            <point x="0.861111" y="0.5" />
+                            <point x="0.361111" y="0.361111" />
+                            <point x="0.5" y="0.902778" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.152778" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -657,26 +667,26 @@
         </object-type>
         <object-type name="textDebug" sid="808399280580046">
             <plugin id="Spritefont2" />
-            <texture />
+            <texture original-source="C:\Users\Pitchfork\Desktop\Sprite Fonts\SpriteFont_UbuntuMono_Regular_(36)_[0,0,0,0]_20x34.png" />
         </object-type>
         <object-type name="titleBG" sid="540405462876979">
             <plugin id="NinePatch" />
             <texture />
         </object-type>
-        <object-type name="textTitle" sid="791547049020169">
+        <object-type name="textResetScores" sid="791547049020169">
             <plugin id="Spritefont2" />
-            <texture />
+            <texture original-source="C:\Users\Pitchfork\Documents\GitHub\template\template\Textures\textScore.png" />
         </object-type>
         <object-type name="menuButton" sid="258242248525267">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="686142187750324" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\play1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\play2.png" />
                 </animation>
                 <animation framecount="2" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="864520262067126" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\button1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\button2.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -689,16 +699,38 @@
         </object-type>
         <object-type name="loaderProgress" sid="184735398750270">
             <plugin id="NinePatch" />
-            <texture />
+            <texture original-source="C:\Users\Pitchfork\Desktop\nine.png" />
         </object-type>
         <object-type name="muteButton" sid="204478435932723">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383891740006284" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\mute.png">
+                        <collision-poly>
+                            <point x="0.147059" y="0.147059" />
+                            <point x="0.5" y="0" />
+                            <point x="0.852941" y="0.147059" />
+                            <point x="1" y="0.5" />
+                            <point x="0.852941" y="0.852941" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147059" y="0.852941" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="309582235227435" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\mute1.png">
+                        <collision-poly>
+                            <point x="0.161765" y="0.161765" />
+                            <point x="0.5" y="0" />
+                            <point x="0.852941" y="0.147059" />
+                            <point x="1" y="0.5" />
+                            <point x="0.867647" y="0.867647" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147059" y="0.852941" />
+                            <point x="0.0147059" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -706,18 +738,18 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528211986990321" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\confirm3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\confirm4.png" />
                 </animation>
                 <animation framecount="2" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="268293988424717" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\confirm2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\confirm3.png" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="textTitle2" sid="337900422981103">
+        <object-type name="textCredits" sid="337900422981103">
             <plugin id="Spritefont2" />
-            <texture />
+            <texture original-source="C:\Users\Pitchfork\Desktop\Sprite Fonts\SpriteFont_UbuntuMono_Bold_(36)_[0,0,0,0]_20x34.png" />
         </object-type>
         <object-type name="thesheepsmeow" sid="302919697584993">
             <plugin id="Sprite" />
@@ -774,6 +806,79 @@
                 </animation>
                 <animation framecount="1" loop="0" name="On" pingpong="0" repeatcount="1" repeatto="0" sid="916878001266031" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title" sid="452924669518523">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="226119404162023">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565833360580618" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\title.png">
+                        <collision-poly>
+                            <point x="0.0810811" y="0.196721" />
+                            <point x="0.5" y="0.0327869" />
+                            <point x="0.935811" y="0.155738" />
+                            <point x="0.918919" y="0.5" />
+                            <point x="0.949324" y="0.877049" />
+                            <point x="0.5" y="0.967213" />
+                            <point x="0.0540541" y="0.868852" />
+                            <point x="0.0945946" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="textMoreGames" sid="224910336461745">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\Pitchfork\Desktop\Sprite Fonts\SpriteFont_UbuntuMono_Bold_(36)_[0,0,0,0]_20x34.png" />
+        </object-type>
+        <object-type name="text3word" sid="462497855689001">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\Pitchfork\Desktop\Sprite Fonts\SpriteFont_UbuntuMono_Bold_(36)_[0,0,0,0]_20x34.png" />
+        </object-type>
+        <object-type name="menuMoreGames" sid="675755183036948">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509092974172302" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\moregames.png">
+                        <collision-poly>
+                            <point x="0.015625" y="0.1" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.984375" y="0.1" />
+                            <point x="1" y="0.5" />
+                            <point x="0.9875" y="0.92" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0125" y="0.92" />
+                            <point x="0.003125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tiledsheeps" sid="821655417570830">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Pitchfork\Desktop\tilinesheeps.png" />
+        </object-type>
+        <object-type name="textLoading" sid="410492584759101">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\Pitchfork\Documents\GitHub\template\template\Textures\textScore.png" />
+        </object-type>
+        <object-type name="scoreBG" sid="546082683914242">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="482393915500471" speed="10">
+                    <frame duration="1" hotspotX="0.503125" hotspotY="0.55" />
+                </animation>
+                <animation framecount="4" loop="1" name="Record" pingpong="0" repeatcount="1" repeatto="0" sid="710319178837036" speed="10">
+                    <frame duration="1" hotspotX="0.503125" hotspotY="0.55" />
+                    <frame duration="1" hotspotX="0.503125" hotspotY="0.55" />
+                    <frame duration="1" hotspotX="0.503125" hotspotY="0.55" />
+                    <frame duration="1" hotspotX="0.503125" hotspotY="0.55" />
                 </animation>
             </animation-folder>
         </object-type>
