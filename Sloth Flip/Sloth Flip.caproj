@@ -2,7 +2,7 @@
 <c2project>
     <name>Sloth Flip</name>
     <description></description>
-    <version>0.1</version>
+    <version>0.2</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>community@thesheepsmeow.com</author-email>
     <author-website>http://www.thesheepsmeow.com</author-website>
@@ -940,11 +940,10 @@
         <file name="Banana_Squish.ogg" />
         <file name="Banana_Squish_2.m4a" />
         <file name="Banana_Squish_2.ogg" />
+        <file name="SlothFlip_OST_-_Jungle_Cruise_-_Tyier_Godette_Edit.m4a" />
+        <file name="SlothFlip_OST_-_Jungle_Cruise_-_Tyier_Godette_Edit.ogg" />
     </sounds-folder>
-    <music-folder>
-        <file name="SlothFlip_OST_-_Jungle_Cruise_-_Tyier_Godette.m4a" />
-        <file name="SlothFlip_OST_-_Jungle_Cruise_-_Tyier_Godette.ogg" />
-    </music-folder>
+    <music-folder />
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

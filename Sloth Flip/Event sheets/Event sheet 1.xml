@@ -46,10 +46,10 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Play" sid="630845837282619" type="Audio">
-                                    <param id="0" name="Audio file">SlothFlip_OST_-_Jungle_Cruise_-_Tyier_Godette</param>
+                                <action id="0" name="Play" sid="831125048832062" type="Audio">
+                                    <param id="0" name="Audio file">SlothFlip_OST_-_Jungle_Cruise_-_Tyier_Godette_Edit</param>
                                     <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">-5</param>
                                     <param id="1" name="Tag (optional)">&quot;music&quot;</param>
                                 </action>
                             </actions>

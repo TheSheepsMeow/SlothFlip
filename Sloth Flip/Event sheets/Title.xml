@@ -236,7 +236,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="8" name="Open URL in new window" sid="374214030772109" type="Browser">
-                            <param id="0" name="URL">&quot;http://www.thesheepsmeow.com/&quot;</param>
+                            <param id="0" name="URL">&quot;http://www.thesheepsmeow.com/html5&quot;</param>
                             <param id="1" name="Tag">&quot;NewWindow&quot;</param>
                         </action>
                     </actions>
