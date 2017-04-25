@@ -464,7 +464,7 @@
                 </instance>
                 <instance type="ParticlesSloth2" uid="5">
                     <properties>
-                        <rate>128</rate>
+                        <rate>10</rate>
                         <spray-cone>360</spray-cone>
                         <type>One-shot</type>
                         <initial-particle-properties></initial-particle-properties>
@@ -567,12 +567,12 @@
                 </instance>
                 <instance type="ParticlesBranch" uid="30">
                     <properties>
-                        <rate>128</rate>
+                        <rate>20</rate>
                         <spray-cone>360</spray-cone>
                         <type>One-shot</type>
                         <initial-particle-properties></initial-particle-properties>
                         <speed>0</speed>
-                        <size>4</size>
+                        <size>8</size>
                         <opacity>100</opacity>
                         <grow-rate>-50</grow-rate>
                         <x-randomiser>312</x-randomiser>
