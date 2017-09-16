@@ -110,10 +110,13 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block any="1" sid="404245862825758">
+                        <event-block any="1" disabled="1" sid="404245862825758">
                             <conditions>
-                                <condition id="0" name="On any touch start" sid="627427018794262" type="Touch" />
+                                <condition disabled="1" id="14" name="On tap" sid="847846173394223" type="Touch" />
+                                <condition id="0" name="On any touch start" sid="956003459092358" type="Touch" />
                                 <condition id="1" name="On any key pressed" sid="464178296552130" type="Keyboard" />
+                                <condition disabled="1" id="1" name="On any click" sid="261389698702110" type="Mouse" />
+                                <condition id="2" name="Is in touch" sid="645907750028843" type="Touch" />
                             </conditions>
                             <actions>
                                 <action behavior="Platform" id="10" name="Set angle of gravity" sid="595304841742511" type="Player">
@@ -123,6 +126,24 @@
                                     <param id="0" name="Vector Y">0</param>
                                 </action>
                                 <action id="-7" name="Set size" sid="346889270629548" type="PlayerAnimations">
+                                    <param id="0" name="Width">playerWidth</param>
+                                    <param id="1" name="Height">playerHeight / 2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="204225437266442">
+                            <conditions>
+                                <condition id="2" name="Is in touch" sid="357402165465494" type="Touch" />
+                                <condition id="-4" name="Trigger once while true" sid="729123721703469" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="10" name="Set angle of gravity" sid="353978373263114" type="Player">
+                                    <param id="0" name="Angle">Player.Platform.GravityAngle + 180</param>
+                                </action>
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="979690418674232" type="Player">
+                                    <param id="0" name="Vector Y">0</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="425540653446951" type="PlayerAnimations">
                                     <param id="0" name="Width">playerWidth</param>
                                     <param id="1" name="Height">playerHeight / 2</param>
                                 </action>
