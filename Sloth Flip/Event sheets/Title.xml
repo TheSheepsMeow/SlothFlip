@@ -281,19 +281,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action disabled="1" id="3" name="Clear storage" sid="528831188550477" type="LocalStorage" />
-                        <action disabled="1" id="-9" name="Set value" sid="975073832825819" type="System">
-                            <param id="0" name="Variable">score</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action disabled="1" id="-9" name="Set value" sid="706056893772833" type="System">
-                            <param id="0" name="Variable">highScore</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action disabled="1" id="0" name="Call function" sid="416971665513106" type="Function">
-                            <param id="0" name="Name">&quot;setHighScore&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
                         <action id="-16" name="Wait" sid="331337927460216" type="System">
                             <param id="0" name="Seconds">0.1</param>
                         </action>

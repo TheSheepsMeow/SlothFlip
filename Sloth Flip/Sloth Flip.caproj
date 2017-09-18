@@ -2,7 +2,7 @@
 <c2project>
     <name>Sloth Flip</name>
     <description>flip for bananas</description>
-    <version>0.6</version>
+    <version>0.7</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>http://www.thesheepsmeow.com/html5</author-website>
@@ -718,7 +718,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="ad" sid="810328533861729">
+        <object-type name="moregames" sid="810328533861729">
             <plugin id="NinePatch" />
             <texture />
         </object-type>

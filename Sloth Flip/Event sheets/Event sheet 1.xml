@@ -37,6 +37,10 @@
                             <param id="0" name="Group name">&quot;Sloth&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
+                        <action id="-12" name="Set group active" sid="601244312168249" type="System">
+                            <param id="0" name="Group name">&quot;Trees&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="294199988591854">
@@ -1339,6 +1343,7 @@
         </event-group>
         <event-group description="" sid="486865022877049" title="Trees">
             <sub-events>
+                <comment></comment>
                 <event-block sid="828914641803060">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="199528753342580" type="System">
@@ -1367,8 +1372,10 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment></comment>
                 <event-block sid="792508709573670">
                     <conditions>
+                        <condition id="-2" name="On start of layout" sid="693647655723027" type="System" />
                         <condition id="-7" name="Compare instance variable" sid="541412898149241" type="trees">
                             <param id="0" name="Instance variable">id</param>
                             <param id="1" name="Comparison">0</param>
@@ -1398,6 +1405,7 @@
                 </event-block>
                 <event-block sid="497290110990156">
                     <conditions>
+                        <condition id="-2" name="On start of layout" sid="608463583173891" type="System" />
                         <condition id="-7" name="Compare instance variable" sid="205045895038462" type="trees">
                             <param id="0" name="Instance variable">id</param>
                             <param id="1" name="Comparison">0</param>
@@ -1425,10 +1433,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="372448754596718">
-                    <conditions />
-                    <actions />
-                </event-block>
+                <comment></comment>
             </sub-events>
         </event-group>
         <event-group description="" sid="544596170075188" title="Group10">

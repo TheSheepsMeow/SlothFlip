@@ -19,26 +19,26 @@
                     </conditions>
                     <actions>
                         <action id="5" name="Check item exists" sid="259792651565370" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_key_slothflip&quot;</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="947118244518176">
                     <conditions>
                         <condition id="9" name="On item exists" sid="917649116412232" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_key_slothflip&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="1" name="Get item" sid="467997655870087" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_key_slothflip&quot;</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="484810971355112">
                     <conditions>
                         <condition id="1" name="On item get" sid="492182355509492" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_key_slothflip&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -51,7 +51,7 @@
                 <event-block sid="469759203630746">
                     <conditions>
                         <condition id="10" name="On item missing" sid="760878807962219" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_key_slothflip&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -75,7 +75,7 @@
                             <param id="1" name="Value">score</param>
                         </action>
                         <action id="0" name="Set item" sid="771178994232694" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_key_slothflip&quot;</param>
                             <param id="1" name="Value">highScore</param>
                         </action>
                         <action id="4" name="Set animation" sid="704713462968512" type="scoreBG">
