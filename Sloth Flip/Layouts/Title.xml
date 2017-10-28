@@ -536,32 +536,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="moregames" uid="43">
-                    <properties>
-                        <left-margin>16</left-margin>
-                        <right-margin>16</right-margin>
-                        <top-margin>16</top-margin>
-                        <bottom-margin>16</bottom-margin>
-                        <edges>Tile</edges>
-                        <fill>Tile</fill>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                        <seams>Overlap</seams>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>416</x>
-                        <y>430</y>
-                        <z>0</z>
-                        <width>320</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="textResetScores" uid="51">
                     <properties>
                         <character-width>20</character-width>
@@ -588,28 +562,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="thesheepsmeow" uid="52">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>559</x>
-                        <y>455</y>
-                        <z>0</z>
-                        <width>39.013114929</width>
-                        <height>39.013114929</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502857149</hotspotX>
-                        <hotspotY>0.502857149</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

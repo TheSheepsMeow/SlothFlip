@@ -668,15 +668,9 @@
                                     <param id="2" name="X">Player.X + random(-30,30)</param>
                                     <param id="3" name="Y">-100</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="447626402023746" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="243797893497631" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-2" name="Go to layout" sid="274512009372192" type="System">
-                                    <param id="0" name="Layout">Title</param>
+                                <action id="0" name="Call function" sid="167956435530531" type="Function">
+                                    <param id="0" name="Name">&quot;gameover&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -746,15 +740,9 @@
                                     <param id="2" name="X">Player.X + random(-30,30)</param>
                                     <param id="3" name="Y">LayoutHeight+100</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="822763227176049" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="199996665712013" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-2" name="Go to layout" sid="151290718203698" type="System">
-                                    <param id="0" name="Layout">Title</param>
+                                <action id="0" name="Call function" sid="318400762754372" type="Function">
+                                    <param id="0" name="Name">&quot;gameover&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -812,6 +800,211 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="154859604992166" title="Lose Screen">
+            <sub-events>
+                <event-block sid="272400092429199">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <variable constant="0" name="tip" sid="116605362710249" static="0" type="number">0</variable>
+                <event-block sid="233510911032907">
+                    <conditions>
+                        <condition id="0" name="On function" sid="701042287091062" type="Function">
+                            <param id="0" name="Name">&quot;gameover&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="588975945813389" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="118511138710806" type="fadeBG" />
+                        <action id="-16" name="Wait" sid="254258459134182" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="836033727217161" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;Branch_Break&quot;,&quot;Branch_Break_2&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="925636384238856" type="expressionTip">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="272438229541020" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="133479860405423" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;Branch_Break&quot;,&quot;Branch_Break_2&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="246485765749930" type="againButton">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="571649584422845" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="540134340180856" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;Banana_Squish&quot;,&quot;Banana_Squish_2&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="850780820675816" type="SpriteFontTipSign">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="298861445010486" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="283999656474543" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;Banana_Squish&quot;,&quot;Banana_Squish_2&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="676317468233153" type="SpriteFontTips">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="112272234486824" type="System">
+                            <param id="0" name="Variable">tip</param>
+                            <param id="1" name="Value">choose(0,1,2)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="678582590410782">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="552226921928758" type="System">
+                                    <param id="0" name="Variable">tip</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="180137959635463" type="SpriteFontTips">
+                                    <param id="0" name="Text">&quot;Tap to flip. Anywhere and anytime. Even in midair!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="193453719058293">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="462821426912207" type="System">
+                                    <param id="0" name="Variable">tip</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="175339818369673" type="SpriteFontTips">
+                                    <param id="0" name="Text">&quot;Flip rapidly to change directions, as many times as you want!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="211071287175635">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="877631483936923" type="System">
+                                    <param id="0" name="Variable">tip</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="865567458936415" type="SpriteFontTips">
+                                    <param id="0" name="Text">&quot;Branches can protect you. Don&apos;t break them all!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="319675271319338">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="800915152812274" type="Touch">
+                            <param id="0" name="Object">againButton</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="750214999107295" type="againButton" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="989378248338027" type="Audio">
+                            <param id="0" name="Audio file">Banana_Squish</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="959549879452437" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="306446540750078" type="System" />
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="562164753959385">
+                    <conditions>
+                        <condition id="16" name="On hold over object" sid="680877549757739" type="Touch">
+                            <param id="0" name="Object">againButton</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="341040142340333" type="againButton" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="704062417181065" type="againButton">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="876284463627404">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="678025595033102">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="541356657664560" type="Touch">
+                            <param id="0" name="Object">againButton</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="606454706034292" type="againButton" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="942246297411568" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;Banana_Squish&quot;,&quot;Banana_Squish_2&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="181188443216214" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="552387833509812" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="158311001572732" type="System">
+                            <param id="0" name="Layout">Title</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="641527701760735">
+                    <conditions>
+                        <condition id="16" name="On hold over object" sid="210885491357380" type="Touch">
+                            <param id="0" name="Object">againButton</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="704959532263067" type="againButton" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="780249290467734" type="againButton">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="383008494978593">
+                    <conditions />
+                    <actions />
                 </event-block>
             </sub-events>
         </event-group>
@@ -1434,22 +1627,6 @@
                     </sub-events>
                 </event-block>
                 <comment></comment>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="544596170075188" title="Group10">
-            <sub-events>
-                <event-block sid="173172562118186">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="835236466255658">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="514958520685976">
-                    <conditions />
-                    <actions />
-                </event-block>
             </sub-events>
         </event-group>
     </events>
