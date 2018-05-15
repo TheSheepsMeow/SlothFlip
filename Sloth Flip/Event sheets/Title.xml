@@ -236,7 +236,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="7" name="Go to URL" sid="374214030772109" type="Browser">
-                            <param id="0" name="URL">&quot;http://www.thesheepsmeow.com/html5&quot;</param>
+                            <param id="0" name="URL">&quot;https://www.thesheepsmeow.com/html5/games/&quot;</param>
                             <param id="1" name="Target">2</param>
                         </action>
                     </actions>
